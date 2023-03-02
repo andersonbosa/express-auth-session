@@ -1,4 +1,4 @@
-# Name of this GitHub Actions workflow.
+# https://docs.convisoappsec.com/cli/installation
 name: Conviso SAST
 
 on:
@@ -6,7 +6,7 @@ on:
   pull_request: {}
   # Scan mainline branches and report all findings:
   push:
-    branches: ["main"]
+    branches: ['main']
   # Allows you to start manually
   workflow_dispatch: {}
 

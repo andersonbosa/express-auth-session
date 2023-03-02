@@ -1,4 +1,4 @@
-# Name of this GitHub Actions workflow.
+# https://semgrep.dev/
 name: Semgrep CI
 
 on:

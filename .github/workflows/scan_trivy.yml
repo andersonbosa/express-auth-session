@@ -1,4 +1,4 @@
-# Name of this GitHub Actions workflow.
+# https://trivy.dev
 name: Trivy Security Scan
 
 on:
@@ -6,7 +6,7 @@ on:
   pull_request: {}
   # Scan mainline branches and report all findings:
   push:
-    branches: ["main"]
+    branches: ['main']
   # Allows you to start manually
   workflow_dispatch: {}
 
@@ -22,11 +22,11 @@ jobs:
       - name: Run Trivy vulnerability scanner in repo mode
         uses: aquasecurity/trivy-action@master
         with:
-          scan-type: "fs"
+          scan-type: 'fs'
           ignore-unfixed: true
-          format: "sarif"
+          format: 'sarif'
           output: results.sarif
-          severity: "CRITICAL"
+          severity: 'CRITICAL'
 
       - name: Upload results
         uses: actions/upload-artifact@v3

@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2023 Anderson do Nascimento Bosa
+Copyright (c) 2023 Anderson Bosa
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

@@ -1,0 +1,133 @@
+<svg fill="none" viewBox="0 0 800 400" width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        @keyframes rotate {
+          0% {
+            transform: rotate(1deg);
+          }
+
+          100% {
+            transform: rotate(-1deg);
+          }
+        }
+
+        @keyframes rotate2 {
+          0% {
+            transform: rotate(2deg);
+          }
+
+          100% {
+            transform: rotate(-2deg);
+          }
+        }
+
+        @keyframes gradientBackground {
+          0% {
+            background-position: 0% 50%;
+          }
+
+          50% {
+            background-position: 100% 50%;
+          }
+
+          100% {
+            background-position: 0% 50%;
+          }
+        }
+
+        @keyframes fadeIn {
+          0% {
+            opacity: 0;
+          }
+
+          66% {
+            opacity: 0;
+          }
+
+          100% {
+            opacity: 1;
+          }
+        }
+
+        .container {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          margin: 0;
+          width: 100%;
+          height: 400px;
+          gap: 10px;
+
+          font-family:
+            system-ui,
+            -apple-system,
+            'Segoe UI',
+            Roboto,
+            Helvetica,
+            Arial,
+            sans-serif,
+            'Apple Color Emoji',
+            'Segoe UI Emoji';
+
+          background: linear-gradient(-45deg, #1DB759, #3A4473, #ECEEFF, #727597);
+          background-size: 700% 200%;
+          animation: gradientBackground 8s ease infinite;
+          border-radius: 10px;
+          color: white;
+          text-align: center;
+        }
+
+        h1 {
+          font-size: 50px;
+          line-height: 0.3;
+          letter-spacing: 5px;
+          text-align: left;
+          
+          text-transform: uppercase;
+          text-shadow:
+            0 1px 0 #efefef,
+            0 2px 0 #efefef,
+            0 3px 0 #efefef,
+            0 4px 0 #efefef,
+            0 12px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .shake {
+          animation: rotate ease-in-out 1s infinite alternate;
+        }
+
+        .rotating-element {
+          animation: spin 6s infinite alternate;
+        }
+        
+        @keyframes spin {
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(360deg);
+          }
+        }
+
+      </style>
+      <div class="container">
+        <div class="rotating-element">
+          <svg width="128px" height="128px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- change below. ideias: https://www.svgrepo.com -->
+            <svg fill="#fefefe" viewBox="-5 -2 24 24" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin" class="jam jam-padlock-open-f"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M12 5h-2a3 3 0 1 0-6 0v5h8a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-6a2 2 0 0 1 2-2V5a5 5 0 1 1 10 0zM7 17a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"></path></g></svg>
+          </svg>
+        </div>
+        <div>
+          <p> </p>
+        </div>
+        <div class="shake">
+            <h1>express+</h1>
+            <h1>passaport+</h1>
+            <h1>mongoose</h1>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>

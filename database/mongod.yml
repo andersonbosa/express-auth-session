@@ -1,0 +1,43 @@
+# MongoDB configuration file
+
+# for documentation of all options, see:
+#   http://docs.mongodb.org/manual/reference/configuration-options/
+
+# # Basic settings
+# storage:
+#   dbPath: /var/lib/mongodb
+#   journal:
+#     enabled: true
+
+# systemLog:
+#   destination: file
+#   path: /var/log/mongodb/mongod.log
+#   logAppend: true
+#   verbosity: 1
+
+# Network settings
+net:
+  port: 27017
+  bindIp: 0.0.0.0
+
+# # Security settings
+security:
+  authorization: enabled
+
+  # Authentication settings
+  authentication:
+    enabled: true
+    mode: 'SCRAM-SHA-256'
+
+  # User and role definitions
+  # Note: replace 'username' and 'password' with your own username and password
+  user:
+    username: 'root'
+    password: 'root'
+    roles:
+      - 'readWrite'
+      - 'dbAdmin'
+
+# # Replication settings
+# replication:
+#   replSetName: rs0
