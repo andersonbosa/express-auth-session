@@ -49,3 +49,10 @@ That started when I was browsing the internet and came across a [FreeCodeCamp.or
 <h2 id="license"> 📝 License</h2>
 
 This project is under the MIT license. For further information [check here](./LICENSE.md).
+
+---
+
+<h4>  
+  <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/andersonbosa/express-auth-session?style=social">
+  | Did you like the repository? Give it a star! 😁
+</h4>
